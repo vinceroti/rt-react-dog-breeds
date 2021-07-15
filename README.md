@@ -12,6 +12,7 @@ TODO:
 - A better transition for when a user is searching through the breeds. Something similar to "vue transition group" with arrays
 - Have a placeholder image for the lazy loaded images
 - Loading the names of the dogs once the image is fully loaded
+- Getting a huge list of dogs images through a loop is bad practice. I wish the API had a better way of grabbing all the image urls in bulk. 
 
 Questions to ask:
 - onChange - comment within DogList.js
