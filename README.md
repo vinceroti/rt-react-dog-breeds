@@ -13,7 +13,6 @@ TODO:
 - Have a placeholder image for the lazy loaded images
 - Loading the names of the dogs once the image is fully loaded
 - Getting a huge list of image urls through a loop is bad practice. I wish the API had a better way of grabbing all the image urls in bulk. 
-- **After I turned the project in ideas**
 - using local storage to store API data
 - using lazy loaded components for images. When images scroll into view, call API for url, then load image.
 
