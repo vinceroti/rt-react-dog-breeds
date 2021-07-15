@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 class DogList extends React.Component {
   constructor(props) {
     super(props);
@@ -46,7 +47,12 @@ class DogList extends React.Component {
       )
         return (
           <li key={key}>
-            <img alt={value} src={value}></img>
+            <LazyLoadImage
+              alt={value}
+              height={300}
+              src={value}
+              effect="opacity"
+            />
             <p className="breed">{key}</p>
           </li>
         );
