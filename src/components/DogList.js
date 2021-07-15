@@ -46,7 +46,11 @@ class DogList extends React.Component {
       )
         return (
           <li key={key}>
-            <img alt={value} src={value}></img>
+            <img
+              alt={`${key} dog picture`}
+              title={`${key} dog`}
+              src={value}
+            ></img>
             <p className="breed">{key}</p>
           </li>
         );
