@@ -23,7 +23,8 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
-  @include respond-to(medium) {
+  margin-top: spacing(base);
+  @include respond-to(large) {
     width: 80%;
   }
 }
