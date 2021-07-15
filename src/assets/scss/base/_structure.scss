@@ -4,11 +4,11 @@ body {
 }
 
 body,
-#app {
+.app {
   min-height: 100vh;
 }
 
-#app {
+.app {
   display: flex;
   flex-wrap: wrap;
 }
