@@ -31,7 +31,10 @@
     height: rem(300);
     width: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
+  }
+  .lazy-load-image-background {
+    width: 100%;
   }
   .breed {
     position: absolute;
