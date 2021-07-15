@@ -10,6 +10,8 @@ TODO:
 - hooking up typescript would be fun!
 - Breaking up DogList into smaller components would be ideal.
 - A better transition for when a user is searching through the breeds. Something similar to "vue transition group" with arrays
+- Have a placeholder image for the lazy loaded images
+- Loading the names of the dogs once the image is fully loaded
 
 Questions to ask:
 - onChange - comment within DogList.js
