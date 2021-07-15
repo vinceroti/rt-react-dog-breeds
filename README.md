@@ -8,6 +8,7 @@ TODO:
 - Testing. I really wanted to do this but didn't schedule enough time
 - Didn't get to the bonus portion (sub-breeds).
 - hooking up typescript would be fun!
+- Breaking up DogList into smaller components would be ideal.
 
 Questions to ask:
 - onChange - comment within DogList.js
