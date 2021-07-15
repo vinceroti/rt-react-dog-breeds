@@ -1,32 +1,30 @@
+.dog-container {
+  width: 100%;
+  h1 {
+    margin-bottom: spacing(paragraph);
+  }
+  input {
+    margin-left: spacing(element);
+  }
+}
 .dog-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 0;
-  @include respond-to(medium) {
-    justify-content: space-around;
-  }
-  h1 {
-    width: 100%;
-    margin-bottom: spacing(paragraph);
-  }
-  input {
-    width: 100%;
-  }
   li {
     position: relative;
     padding-left: 0;
     list-style-type: none;
     width: 47%;
     height: rem(300);
-    margin-bottom: rem(10);
+    margin: rem(5);
     width: 100%;
     @include respond-to(small) {
-      width: 47%;
+      width: calc(50% - #{rem(10)});
     }
     @include respond-to(medium) {
-      width: 32%;
+      width: calc(33.3% - #{rem(10)});
     }
   }
   img {
