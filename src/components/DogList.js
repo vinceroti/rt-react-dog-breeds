@@ -8,6 +8,7 @@ class DogList extends React.Component {
   }
 
   handleChange(e) {
+    // on input change, find dogs that match the input
     const matches = [];
     Object.keys(this.state.dogs).forEach((dog) => {
       if (dog.match(e.target.value)) matches.push(dog);
@@ -16,6 +17,7 @@ class DogList extends React.Component {
     this.setState({ value: e.target.value, matchedDogs: matches });
   }
   async componentDidMount() {
+    // get API data on mount
     try {
       const res = await axios.get(`https://dog.ceo/api/breeds/list/all`);
       const dogs = res.data.message;
@@ -26,6 +28,7 @@ class DogList extends React.Component {
     }
   }
   async fetchImg(dogs) {
+    // fetch images once dog list is complete
     const imgs = {};
     await Object.entries(dogs).forEach(async ([key]) => {
       try {
@@ -33,13 +36,14 @@ class DogList extends React.Component {
           `https://dog.ceo/api/breed/${key}/images/random`
         );
         imgs[key] = res.data.message;
-        this.setState({ imgs }); // i want to update state after the images have been recieved
+        this.setState({ imgs }); // i want to update state after the images have been recieved, this is WRONG
       } catch (e) {
         console.error("Something went wrong - ", e);
       }
     });
   }
   renderDogList() {
+    // render images to matched dog list or show all dogs
     return Object.entries(this.state.imgs).map(([key, value]) => {
       if (
         this.state.matchedDogs.includes(key) ||
@@ -48,7 +52,8 @@ class DogList extends React.Component {
         return (
           <li key={key}>
             <LazyLoadImage
-              alt={value}
+              alt={`${key} dog picture`}
+              title={`${key} dog`}
               height={300}
               src={value}
               effect="opacity"
@@ -71,7 +76,7 @@ class DogList extends React.Component {
             onChange={(e) => {
               this.handleChange(e);
             }}
-            // documentation says i dont need an arrow function
+            // documentation says I don't need arrow function but I lose 'this' if I don't use arrow.
             placeholder="Search Dogs"
           ></input>
         </div>
