@@ -9,6 +9,7 @@ TODO:
 - Didn't get to the bonus portion (sub-breeds).
 - hooking up typescript would be fun!
 - Breaking up DogList into smaller components would be ideal.
+- A better transition for when a user is searching through the breeds. Something similar to "vue transition group" with arrays
 
 Questions to ask:
 - onChange - comment within DogList.js
