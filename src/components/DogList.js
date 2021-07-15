@@ -60,7 +60,7 @@ class DogList extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="dog-container">
         <h1> Woof Grid </h1>
         <div>
           <label htmlFor="filter">Filter:</label>
