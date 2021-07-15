@@ -26,7 +26,7 @@ module.exports = {
     "object-shorthand": "off",
     "prettier/prettier": "error",
     camelcase: "off",
-    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-console": ["error", { allow: ["warn", "error"] }],
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-unused-vars": [
       "error",
