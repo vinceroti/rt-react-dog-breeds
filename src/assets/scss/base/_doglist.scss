@@ -1,0 +1,44 @@
+.dog-container {
+  width: 100%;
+  h1 {
+    margin-bottom: spacing(paragraph);
+  }
+  input {
+    margin-left: spacing(element);
+  }
+}
+.dog-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  li {
+    position: relative;
+    padding-left: 0;
+    list-style-type: none;
+    width: 47%;
+    height: rem(300);
+    margin: rem(5);
+    width: 100%;
+    @include respond-to(small) {
+      width: calc(50% - #{rem(10)});
+    }
+    @include respond-to(medium) {
+      width: calc(33.3% - #{rem(10)});
+    }
+  }
+  img {
+    height: rem(300);
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .breed {
+    position: absolute;
+    bottom: 0;
+    padding: spacing(element);
+    background-color: color(dark-gray);
+    color: color(white);
+    text-transform: capitalize;
+  }
+}

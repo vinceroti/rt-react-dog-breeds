@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# Woof Grid App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is a coding assignment assigned by RoosterTeeth.
+
+This app renders a list of lazy loaded images from [dog.ceo](https://dog.ceo/dog-api/documentation/).
+
+TODO:
+- Testing. I really wanted to do this but didn't schedule enough time
+- Didn't get to the bonus portion (sub-breeds).
+- hooking up typescript would be fun!
+- Breaking up DogList into smaller components would be ideal.
+
+Questions to ask:
+- onChange - comment within DogList.js
+- fetchImg - comment within DogList.js
+
+
+--------
 
 ## Available Scripts
 
